@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{>headerlinks}}
+</head>
+
+<body>
+  <!-- main menu section-->
+  {{>navbar}}
+
+  <!-- main header -->
+  <div class="conatiner-fluid main-header">
+    <div class="row">
+      <div class="col-md-10 col-12 mx-auto">
+        <div class="row">
+          <!-- Left Side -->
+          <div class="col-md-6 col-12 main-header-left">
+            <p>Welcome to ECLIPSE WEATHER APP</p>
+            <h1>
+              Get The Latest <span class="text-color">Weather</span> Info of
+              Your City.
+            </h1>
+            <a href="/weather"><button class="btn btn-primary">Check Now</button></a>
+          </div>
+          <!-- Right Side -->
+          <div class="col-md-6 col-12 main-header-right">
+            <img src="images/weather_img_1.png" class="w-100" alt="..." />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer section -->
+  {{>footer}}
+</body>
+
+</html>
