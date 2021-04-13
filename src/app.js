@@ -3,7 +3,7 @@ const path = require("path")
 const hbs = require("hbs")
 const app = express();
 
-const PORT = process.env.PORT || 5000;
+const port = process.env.PORT || 5000;
 
 const staticPath = path.join(__dirname, "../public");
 const templatePath = path.join(__dirname, "../templates/views");
@@ -36,4 +36,4 @@ app.get("*", (req,res)=>{
     })
 })
 
-app.listen(PORT, ()=> console.log(`Server running on http://localhost:${PORT}`))
+app.listen(port, ()=> console.log(`Server running on http://localhost:${port}`))
